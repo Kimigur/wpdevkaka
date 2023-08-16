@@ -15,4 +15,19 @@ ServerEvents.recipes(event => {
         ,event.recipes.create.deploying(inter, [inter, '#forge:wires/copper']) //Шаблон руки
 //        ,event.recipes.create.cutting(inter, inter) // Шаблон пилы
     ]).transitionalItem(inter).loops(2)
+  event.recipes.create.mechanicalCrafting('ic2:wind_turbine', [
+    'AAEAA',
+    'DCBCD',
+    'AAEAA' 
+  ], {
+    A: '#forge:ingots/refined_iron'
+   ,B: 'immersiveengineering:coil_lv'
+   ,C: '#forge:rods/iron'
+   ,D: 'ic2:turbine_blade'
+   ,E: '#forge:wires/copper'
+//   ,F: ItemF
+//   ,G: ItemG
+//   ,H: ItemH
+//   ,I: ItemI
+  })
 })

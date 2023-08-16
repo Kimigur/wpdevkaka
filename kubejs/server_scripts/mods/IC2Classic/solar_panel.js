@@ -15,4 +15,20 @@ ServerEvents.recipes(event => {
 //        ,event.recipes.create.filling(inter, [inter, Fluid.of('FluidId', 10)]) //Шаблон дозатара
 //        ,event.recipes.create.cutting(inter, inter) // Шаблон пилы
     ]).transitionalItem(inter).loops(4)
+  event.recipes.create.mechanicalCrafting('ic2:solar_panel', [
+    'AEEEEEA',
+    'ACCCCCA',
+    'ABBDBBA',
+    'AAABAAA'
+  ], {
+    A: '#forge:ingots/refined_iron'
+   ,B: 'ic2:copper_cable_item'
+   ,C: 'ic2:re_battery'
+   ,D: 'ic2:circuit'
+   ,E: 'mekanismgenerators:solar_panel'
+//   ,F: ItemF
+//   ,G: ItemG
+//   ,H: ItemH
+//   ,I: ItemI
+  })
 })
